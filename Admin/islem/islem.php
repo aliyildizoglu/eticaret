@@ -281,11 +281,9 @@ if (isset($_POST['hakkimizda_kaydet'])) {
 
 
 
-	if (isset($_GET['kategori_kaydet'])) {
+	if (isset($_POST['kategori_kaydet'])) {
 		
-		$kategori_kaydet=$baglanti->prepare("SELECT * FROM kategori WHERE kategori_id=:kategori_id, kategori_adi=:kategori_adi, kategori_sira=:kategori_sira, kategori_durum=:kategori_durum");
-
-		$kategori_kaydet->execute(['kategori_id='])
+		echo $_POST['kategori_durum'];
 
 
 

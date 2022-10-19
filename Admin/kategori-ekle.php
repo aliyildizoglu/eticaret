@@ -21,104 +21,66 @@
               <div>
               <?php
 
-                if (@$_GET['yuklenme']=="basarili") {  ?>
+if (@$_GET['yuklenme']=="basarili") {  ?>
 
-                <h6 style="color:success">(Yükleme İşleminiz Başarılı)</h6>
-
-
-
-            <?php
-
-            } 
-
-            elseif(@$_GET['yuklenme']=="basarisiz") { ?> 
-
-            <h6  style="color:red">(Yükleme İşleminiz Başarısız) </h6> <?php
-            
-            }
-            elseif (@$_GET['yuklenme']=="kullanicivar") 
-            { ?>
-
-            <h6 style="color:red">(Kullanıcı Kayıtlı)</h6>
-
-            <?php
-            }
-            ?>
+  <h6 style="color:success">(Yükleme İşleminiz Başarılı)</h6>
 
 
-            </div>
+
+<?php
+
+} 
+
+elseif(@$_GET['yuklenme']=="basarisiz") { ?> 
+
+  <h6  style="color:red">(Yükleme İşleminiz Başarısız) </h6> <?php
+  
+}
+elseif (@$_GET['yuklenme']=="kullanicivar") 
+{ ?>
+
+<h6 style="color:red">(Kullanıcı Kayıtlı)</h6>
+
+<?php
+}
+?>
+
             
               
-              <!-- /.card-header -->
-              <!-- form start -->
+             
               <form action="islem/islem.php" method="POST"  enctype="multipart/form-data">
               
                 <div class="card-body">
                 
                   <div class="form-group">
                     <label >Kategori Adı</label>
-                    <input name="kategori_adi" type="text" class="form-control"  placeholder="Kullanıcı Adı Giriniz"  >
+                    <input name="kategori_adi" type="text" class="form-control"  placeholder="Kategori Adı Giriniz"  >
                   </div>
                   
                   <div class="form-group">
-                    <label >Kategori Sıra</label>
-                    <input name="kategori_sira" type="text" class="form-control"  placeholder="Kullanıcı Şifrenizi Giriniz">
+                    <label >Kategori Sırası</label>
+                    <input name="kategori_sira" type="text" class="form-control"  placeholder="Kategori Sırasını Giriniz">
                   </div>
-
-
-
-
-
-                </div>
-                   <!-- Main content -->
-    <section class="content">
-      <div class="container-fluid">
-        <!-- SELECT2 EXAMPLE -->
-        <div class="card card-default">
-          <div class="card-header">
-            <h3 class="card-title">Kategori Durum</h3>
-
-            <div class="card-tools">
-              <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-minus"></i></button>
-              <button type="button" class="btn btn-tool" data-card-widget="remove"><i class="fas fa-times"></i></button>
-            </div>
-          </div>
-          <!-- /.card-header -->
-          <div class="card-body">
-            <div class="row">
-              <div class="col-md-12">
-                <div class="form-group">
-                  <label>Minimal</label>
-                  <select class="form-control select2" style="width: 100%;">
-                    <option selected="selected">Alabama</option>
-                    <option>Alaska</option>
-                    <option>California</option>
-                    <option>Delaware</option>
-                    <option>Tennessee</option>
-                    <option>Texas</option>
-                    <option>Washington</option>
-                  </select>
-                </div>
-                
-              </div>
-              <!-- /.col -->
-              
-            </div>
-            <!-- /.row -->
-
-         
-            <!-- /.row -->
-          </div>
-         
-        </div>
-        <!-- /.card -->
-                  
                  
-               
-                </div>
-                                    
-                 
-                <!-- /.card-body -->
+                    <!-- /.card-header -->
+                    <div class="form-group">
+                        <label>Kategori Durumunu Seçiniz</label>
+                        <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                            
+                            <select name="kategori_durum" class="form-control select2" style="width: 100%;">
+
+                                <option selected="selected">Yayınlayın</option>
+                                <option>Yayınlamayın</option>
+                            
+                            </select>
+                            </div>
+                        </div>
+                        </div>
+                        </div>
+                    </div>                
+                    </div>
 
                 <div class="card-footer">
                   <button name="kategori_kaydet" type="submit" class="btn btn-primary">Gönder</button>
