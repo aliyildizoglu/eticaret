@@ -19,5 +19,5 @@ Bu proje, temel bir e-ticaret sistemi üzerine kurulmuş, HTML, CSS, JavaScript 
   - JavaScript (vanilla JS)
 
 - **Backend:**
-  - PHP (veritabanı entegrasyonu henüz eklenmemiş)
+  - PHP (veritabanı entegrasyonu henüz eklenmedi)
 
