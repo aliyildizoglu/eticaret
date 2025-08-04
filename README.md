@@ -21,14 +21,3 @@ Bu proje, temel bir e-ticaret sistemi üzerine kurulmuş, HTML, CSS, JavaScript 
 - **Backend:**
   - PHP (veritabanı entegrasyonu henüz eklenmemiş)
 
-## 📂 Klasör Yapısı
-
-eticaret/
-├── css/
-├── images/
-├── js/
-├── pages/
-├── php/
-├── index.html
-└── README.md
-
